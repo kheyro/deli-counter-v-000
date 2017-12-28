@@ -10,3 +10,7 @@ def line(queue)
     puts line
   end
 end
+
+def take_a_number(queue, name) 
+  queue << name
+end
