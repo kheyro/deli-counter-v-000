@@ -18,6 +18,7 @@ end
 
 def now_serving(queue)
   if queue.size > 0
+    puts "Currently serving #{queue[0]}."
     queue.shift
   else
     puts "There is nobody waiting to be served!"
