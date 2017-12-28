@@ -6,5 +6,6 @@ def line(queue)
     queue.each do |people, index|
       line += " #{index+1}. #{people}"
     end
+    puts line
   end
 end
