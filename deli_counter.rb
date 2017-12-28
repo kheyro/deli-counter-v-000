@@ -17,5 +17,9 @@ def take_a_number(queue, name)
 end
 
 def now_serving(queue)
-  queue.size == 0 ? puts "There is nobody waiting to be served!" : queue.unshift
+  if queue.size > 0 
+    queue.unshift
+  else
+    puts "There is nobody waiting to be served!"
+  end
 end
