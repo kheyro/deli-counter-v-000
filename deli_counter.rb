@@ -17,5 +17,5 @@ def take_a_number(queue, name)
 end
 
 def now_serving(queue)
-  queue.size == 0 ? "Line is empty" : queue.unshift
+  queue.size == 0 ? puts "There is nobody waiting to be served!" : queue.unshift
 end
