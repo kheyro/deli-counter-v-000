@@ -18,7 +18,7 @@ end
 
 def now_serving(queue)
   if queue.size > 0
-    queue.unshift
+    queue.shift
   else
     puts "There is nobody waiting to be served!"
   end
