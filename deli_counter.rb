@@ -11,6 +11,8 @@ def line(queue)
   end
 end
 
-def take_a_number(queue, name) 
+def take_a_number(queue, name)
+  if queue.size == 0
+    puts "Welcome, #{name}. You are number 1 in line."
   queue << name
 end
