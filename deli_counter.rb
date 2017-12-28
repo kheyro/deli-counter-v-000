@@ -4,8 +4,8 @@ def line(queue)
   else
     index = 0
     line = "The line is currently:"
-    queue.each do |people, index|
-      line << " #{index}. #{people}"
+    queue.each_with_index do |people, index|
+      line << " #{index+1}. #{people}"
     end
     puts line
   end
