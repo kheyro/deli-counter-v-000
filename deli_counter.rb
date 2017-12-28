@@ -15,3 +15,7 @@ def take_a_number(queue, name)
   queue << name
   puts "Welcome, #{name}. You are number #{queue.size} in line."
 end
+
+def now_serving(queue)
+  queue.size == 0 ? "Line is empty" : queue.unshift
+end
